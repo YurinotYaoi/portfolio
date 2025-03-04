@@ -1,0 +1,65 @@
+/* fonts */
+@font-face {
+	font-family: Minecraft;
+	src: url('res/font/minecraftregular.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	font-weight: bold;
+	src: url('res/font/minecraftbold.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	font-style: italic;
+	src: url('res/font/minecraftitalic.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	src: url('res/font/minecraftbolditalic.otf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Minecraften;
+	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
+}
+:root {
+	--mcgray: #393E46;
+	--mcblack: #222831;
+	--mcyellow: #c48a54;
+	--mcbgtag: #C0111111;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	background-color: var(--mcyellow);
+	h1 {
+		font-family: 'Minecraften';
+	} 
+	p 
+	{
+		font-family: 'Minecraft';
+	}
+
+	.maindiv {
+		background-color: aliceblue;
+		margin: 18px;
+		justify-content: center;
+		display: grid;
+
+		.avatardiv {
+			background-color: var(--mcblack);
+			color: var(--mcyellow);
+		}
+		.avatardescriptiondiv {
+			background-color: var(--mcblack);
+			color: var(--mcyellow);
+		}
+		.linksdiv {
+			background-color: var(--mcblack);
+			color: var(--mcyellow);
+		}
+	}
+}	

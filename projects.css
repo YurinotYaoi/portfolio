@@ -1,0 +1,32 @@
+/* fonts */
+@font-face {
+	font-family: Minecraft;
+	src: url('res/font/minecraftregular.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	font-weight: bold;
+	src: url('res/font/minecraftbold.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	font-style: italic;
+	src: url('res/font/minecraftitalic.otf');
+}
+@font-face {
+	font-family: Minecraft;
+	src: url('res/font/minecraftbolditalic.otf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Minecraften;
+	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
+}
+:root {
+	--mcgray: #393E46;
+	--mcblack: #222831;
+	--mcyellow: #dfab66;
+	--mcbgtag: #C0111111;
+}
