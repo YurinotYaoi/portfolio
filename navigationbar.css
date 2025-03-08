@@ -52,7 +52,7 @@ body {
 /* Navigation Top Bar */
 #navbar {
 	background-color: var(--mcgray);
-	border-bottom: 20px solid var(--mcblack);
+	border-bottom: 10px solid var(--mcblack);
 
 	width: 100%;
 	position: sticky;
@@ -64,13 +64,25 @@ body {
 		li {
 			display: flex;
 			a {
-				display: flex;
 				text-decoration: none;
 				color: var(--mcyellow);
-				padding: 1em 2em;
 				font-family: 'Minecraft';
+
+				padding-left: 20px;
+				padding-right: 20px;
+
+				display: flex;
 				align-items: center;
 				text-shadow: 4px 4px var(--mcblack);
+			}
+			.educationa {
+
+			}
+			.servuicesa {
+
+			}
+			.projectsa {
+
 			}
 			a:hover {
 				color: wheat;
@@ -97,12 +109,12 @@ body {
 	background-color: rgba(0,0,0,0.5);
 	position: fixed;
 	inset: 0;
-	z-index: 9;
+	z-index: 4;
 	display: none;
 	}
 
 /* Phone Screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 860px) {
 	#open-sidebar-button, #close-sidebar-button {
 		display: block;
 		background: none;
