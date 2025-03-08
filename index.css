@@ -116,23 +116,68 @@ body {
 		}
 		
 	}
+
 	.linksdiv {
-				background-color: var(--mcblack);
-				color: var(--mcyellow);
-				height: 30px;
-				padding: 0px 10px;
-
-				border-radius: 20px;
-
 				justify-self: center;
 
 				display: flex;
 				align-items: center;
+
+				a{
+					margin: 5px;
+				}
+
+				button {
+					background-color: var(--mcblack);
+					color: var(--mcyellow);
+					height: 30px;
+					padding: 0px 10px;
+
+					border-radius: 20px;
+
+					justify-self: center;
+
+					display: flex;
+					align-items: center;
+
+					i {
+							margin-right: 5px;
+						}
+					}
+				}
 	}
 	
-	.aboutcontainer {
+	.abouttitlecontainer {
 		margin-top: 10px;
-		background-color: gray;
+		display: flex;
+		justify-content: center;
+
+		.leftdiv {
+
+		}
+
+		.aboutheader1 {
+			background-color: var(--mcblack);
+
+			width: 20em;
+			height: 3em;
+
+			border-radius: 10px 10px 0px 0px;
+
+			h1 {
+				margin-top: 4px;
+				text-align: center;
+				color: var(--mcyellow);
+			}
+		}
+
+		.rightdiv {
+
+		}
+	}
+
+	.aboutcontainer {
+		background-color: var(--mcblack);
 		height: 1000px;
 		width: 100vw;
 		justify-self: center;
@@ -141,7 +186,79 @@ body {
 			width: 100%;
 			max-width: 1800px;
 			justify-self: center;
+			padding: 10px;
+
+			p {
+				color: var(--mcyellow);
+			}
 		}
 	}
 
-}	
+
+@media screen and (max-width: 860px) {
+	body {
+		min-height: auto;
+		background-color: var(--mcyellow);
+		.griddiv {
+			/* background-color: aliceblue; */
+
+			height: auto;
+
+			display: grid;
+			gap: 1.5rem;
+			grid-template-columns: 1fr 1fr 1fr ;
+			grid-template-rows: 1fr 1fr;
+			
+			align-self: center;
+
+			.avatardiv {
+				/* background-color: var(--mcblack); */
+
+				color: var(--mcyellow);
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 2;
+
+				display: flex;
+				justify-content: right;
+				align-items: center;
+
+				img {
+					width: 15em;
+					min-width: 30px;
+					height: auto;
+	
+					margin-top: 0px;
+
+					aspect-ratio: 1/1;
+					box-shadow: 14px 14px 1px var(--mcblack);
+					border-radius: 30px;
+				}
+			}
+			.avatardescriptiondiv {
+				/* background-color: var(--mcblack); */
+
+				margin-top: 0px;
+				color: var(--mcblack);
+				grid-column-start: 1;
+				grid-column-end: 4;
+				grid-row-start: 2;
+				grid-row-end: 3;
+				max-height: 350px;
+				
+				h1 {
+					font-size: 3.5rem;
+
+					text-align: center;
+				}
+				p {
+					margin-top: 1em;
+					font-size: 1.5em;
+
+					text-align: center;
+				}
+			}
+		}
+	}
+}
