@@ -61,16 +61,14 @@ body {
 	}
 
 	.griddiv {
-		/* background-color: aliceblue; */
-
 		height: 32em;
-		padding-bottom: 15px;
 
 		display: grid;
 		gap: 1.5rem;
 		grid-template-columns: 1fr 1fr 1fr ;
 		
 		align-self: center;
+		margin-bottom: -60px;
 
 		.avatardiv {
 			/* background-color: var(--mcblack); */
@@ -85,7 +83,9 @@ body {
 			align-items: center;
 
 			img {
-				width: 30em;
+				width: 30vw;
+				min-width: 400px;
+				max-width: 470px;
 				height: auto;
 
 				margin-top: 130px;
@@ -103,14 +103,15 @@ body {
 			grid-column-end: 4;
 			max-height: 350px;
 
-			
-
 			h1 {
-				font-size: 5rem;
+				font-size: 5.3rem;
+				margin-bottom: 30px;
+			}
+			h2 {
+				
 			}
 			p {
-				margin-top: 1em;
-				font-size: 1.5em;
+				font-size: 2rem;
 			}
 		}
 		
@@ -151,10 +152,6 @@ body {
 		display: flex;
 		justify-content: center;
 
-		.leftdiv {
-
-		}
-
 		.aboutheader1 {
 			background-color: var(--mcblack);
 
@@ -170,9 +167,6 @@ body {
 			}
 		}
 
-		.rightdiv {
-
-		}
 	}
 
 	.aboutcontainer {
@@ -185,7 +179,7 @@ body {
 			width: 100%;
 			max-width: 1800px;
 			justify-self: center;
-			padding: 10px;
+			padding: 25px;
 
 			p {
 				color: var(--mcyellow);
@@ -209,6 +203,7 @@ body {
 			grid-template-rows: 1fr 1fr;
 			
 			align-self: center;
+			margin-bottom: 0px;
 
 			.avatardiv {
 				/* background-color: var(--mcblack); */
@@ -251,8 +246,11 @@ body {
 
 					text-align: center;
 				}
+				h2 {
+					text-align: center;
+				}
 				p {
-					margin-top: 1em;
+					margin-top: 2px;
 					font-size: 1.5em;
 
 					text-align: center;
