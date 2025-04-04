@@ -37,6 +37,8 @@
 }
 
 body {
+	max-width: 100%;
+    overflow-x: hidden;
 	h1 {
 		font-family: 'Minecraften';
 	} 
@@ -119,6 +121,10 @@ body {
 		position: fixed;
 		top: 0;
 		width: 70%;
+
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: #aaa #616052;
 	}
 	nav {
 		position: fixed;
