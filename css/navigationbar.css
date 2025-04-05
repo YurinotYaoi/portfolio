@@ -51,6 +51,14 @@ body {
 	}
 }	
 
+.mainbody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 0 10px;
+}
+
 /* Navigation Top Bar */
 #navbar {
 	background-color: var(--mcgray);

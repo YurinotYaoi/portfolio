@@ -1,39 +1,74 @@
-/* fonts */
-@font-face {
-	font-family: Minecraft;
-	src: url('res/font/minecraftregular.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	font-weight: bold;
-	src: url('res/font/minecraftbold.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	font-style: italic;
-	src: url('res/font/minecraftitalic.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	src: url('res/font/minecraftbolditalic.otf');
-	font-weight: bold;
-	font-style: italic;
-}
+body {
+	background-color: var(--mcyellow);
 
-@font-face {
-	font-family: Minecraften;
-	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
-}
-:root {
-	--mcgray: #393E46;
-	--mcblack: #222831;
-	--mcyellow: #e4964e;
-	--mcbgtag: #C0111111;
-	--mclblue: #375b94;
-	--mcdblue: #233858;
-}
+	#navbar {
+		.educationa {	
+		color: var(--mcorange);
 
-.educationli {
-	text-shadow: #222831;
+		text-decoration: underline;
+		}
+	}
+	
+	.containerdiv {
+		width: 100%;
+
+		.griddiv {
+		width: 100%;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 8px;
+
+		.div1 {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			background-color: azure;
+		}
+		
+		.div2 {
+			grid-column: span 2 / span 2;
+
+			background-color: azure;
+		}
+		
+		.div3 {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 5;
+			
+
+			background-color: azure;
+		}
+		
+		.div4 {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 4;
+
+			background-color: azure;
+		}
+		
+		.div5 {
+			grid-column: span 3 / span 3;
+			grid-column-start: 2;
+			grid-row-start: 4;
+
+			background-color: azure;
+		}
+
+		.div6 {
+			
+		}
+			 
+		}
+	}
+	
+
 }
 

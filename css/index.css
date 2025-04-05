@@ -19,7 +19,6 @@
 	font-weight: bold;
 	font-style: italic;
 }
-
 @font-face {
 	font-family: Minecraften;
 	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
@@ -40,7 +39,6 @@
 	align-items: center;
 
 	padding: 0 10px;
-	overflow: hidden;
 }
 
 .maindiv {
@@ -164,13 +162,16 @@ body {
 		}
 
 		.pigdiv {
-			width: 100%;
+			width: 100vw;
 
 			padding: 0;
 
 			marquee {
 				position: absolute;
+				width: 100%;
 				bottom: 0;
+
+				display: flex;
 			}
 
 			.pigimg {
@@ -205,6 +206,7 @@ body {
 	body {
 		min-height: auto;
 		background-color: var(--mcyellow);
+
 		.griddiv {
 			/* background-color: aliceblue; */
 
