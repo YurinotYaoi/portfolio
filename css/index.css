@@ -40,6 +40,7 @@
 	align-items: center;
 
 	padding: 0 10px;
+	overflow: hidden;
 }
 
 .maindiv {
@@ -163,12 +164,19 @@ body {
 		}
 
 		.pigdiv {
-			width: 100vw;
+			width: 100%;
+
+			padding: 0;
+
+			marquee {
+				position: absolute;
+				bottom: 0;
+			}
 
 			.pigimg {
-				position: sticky;
-
+				width: 100%;
 				margin: 0;
+				padding: 0;
 
 				object-fit: cover;
 				height: 100px;
@@ -176,6 +184,9 @@ body {
 
 				/* animation: scroll-right 5s linear infinite; */
 			}
+		}
+		.pigdi {
+			height: 1200px;
 		}
 	}
 

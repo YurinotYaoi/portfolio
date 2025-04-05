@@ -27,10 +27,13 @@
 :root {
 	--mcgray: #393E46;
 	--mcblack: #222831;
-	--mcyellow: #dfab66;
+	--mcyellow: #e4964e;
 	--mcbgtag: #C0111111;
+	--mclblue: #375b94;
+	--mcdblue: #233858;
 }
 
 .educationli {
 	text-shadow: #222831;
 }
+
