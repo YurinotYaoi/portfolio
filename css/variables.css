@@ -29,8 +29,69 @@
 	--mcgray: #393E46;
 	--mcblack: #222831;
 	--mcyellow: #e4964e;
-    --mcorange:#c5c4c4;
+    --mcorange:#c46800;
 	--mcbgtag: #C0111111;
 	--mclblue: #375b94;
 	--mcdblue: #233858;
+}
+
+.mainbody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 0 10px;
+}
+
+.maindiv {
+	width: 100%;
+	max-width: 1800px;
+	margin: 18px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.activesite {
+	text-decoration: underline;
+	text-shadow: 2px 2px var(--mcblack);
+}
+
+h1 {
+	font-family: 'Minecraften';
+} 
+h2 {
+	font-family: 'Minecraften';
+}
+p 
+{
+	font-family: 'Minecraft';
+}
+.pigdiv {
+	width: 100vw;
+
+	padding: 0;
+
+	marquee {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+
+		display: flex;
+	}
+
+	.pigimg {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		object-fit: cover;
+		height: 100px;
+		width: 200px;
+
+		/* animation: scroll-right 5s linear infinite; */
+	}
 }

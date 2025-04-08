@@ -161,34 +161,6 @@ body {
 			}
 		}
 
-		.pigdiv {
-			width: 100vw;
-
-			padding: 0;
-
-			marquee {
-				position: absolute;
-				width: 100%;
-				bottom: 0;
-
-				display: flex;
-			}
-
-			.pigimg {
-				width: 100%;
-				margin: 0;
-				padding: 0;
-
-				object-fit: cover;
-				height: 100px;
-				width: 200px;
-
-				/* animation: scroll-right 5s linear infinite; */
-			}
-		}
-		.pigdi {
-			height: 1200px;
-		}
 	}
 
 	@keyframes scroll-right {

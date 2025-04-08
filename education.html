@@ -4,12 +4,10 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="css/variables.css" rel="stylesheet">
-    
+    <link href="css/navigationbar.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link href="css/education.css" rel="stylesheet">
-
-	<link href="css/navigationbar.css" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +26,7 @@
 				</button>
 			</li>
 			<li class="homeli"><a href="index.html"><h1>Yuri</h1></a></li>
-			<li class="educationli"><a href="education.html" class="educationa"><p class="educationp">Education</p></a></li>
+			<li class="educationli"><a href="education.html" class="educationa"><p class="educationp activesite">Education</p></a></li>
 			<li class="servicesli"><a href="services.html" class="servicesa"><p class="servicesp">Services</p></a></li>
 			<li class="projectsli"><a href="projects.html" class="projectsa"><p class="projectp">Projects</p></a></li>
 	</ul>
@@ -39,20 +37,25 @@
     <!-- main body -->
     <main class="mainbody">
 		<div class="maindiv">
-			Contents
-		</div>
 
-		<!-- grid -->
-		 <div class="containerdiv">
-			<div class="griddiv">
-				<div class="div1">1</div>
-				<div class="div2">2</div>
-				<div class="div3">3</div>
-				<div class="div4">4</div>
-				<div class="div5">5</div>
-				<div class="div6">6</div>
+			<!-- grid -->
+			<div class="containerdiv">
+				<div class="griddiv">
+					<div class="div1 animate__animated animate__fadeInLeft"><h1>YurinotYaoi</h1></div>
+					<div class="div2 animate__animated animate__fadeInDown">2</div>
+					<div class="div3 animate__animated animate__fadeInUp">3</div>
+					<div class="div4 animate__animated animate__fadeIn">
+						<img src="https://avatars.githubusercontent.com/u/160141029?v=4&size=64" class="gitavatarimg">
+					</div>
+					<div class="div5 animate__animated animate__fadeInRight">5</div>
+					<div class="div6 animate__animated animate__fadeInBottomRight">6</div>
+				</div>
 			</div>
-		 </div>
+		</div>
+		<!-- Pig -->
+		<div class="pigdiv">
+			<marquee direction="right" scrollamount="10"><img src="css/res/walkingpiggif.gif" class="pigimg"></marquee>
+		</div>
 	</main>
 	<script src="indexscript.js" defer></script>
 </body>

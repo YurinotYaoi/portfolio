@@ -1,70 +1,101 @@
 body {
 	background-color: var(--mcyellow);
-
-	#navbar {
-		.educationa {	
-		color: var(--mcorange);
-
-		text-decoration: underline;
-		}
-	}
 	
 	.containerdiv {
 		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-		.griddiv {
-		width: 100%;
+			.griddiv {
+			width: 100%;
 
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		gap: 8px;
+			display: grid;
+			grid-template-columns: repeat(3, 20vw);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 8px;
 
-		.div1 {
-			grid-column-start: 1;
-			grid-column-end: 2;
-			grid-row-start: 1;
-			grid-row-end: 2;
+			justify-content: center;
 
-			background-color: azure;
-		}
-		
-		.div2 {
-			grid-column: span 2 / span 2;
+			/* GENERAL DIV */
+			div {
+				border-radius: 10px;
+				padding: 3px;
+				background-color: var(--mcgray);
+				color: var(--mcyellow);
+			}
 
-			background-color: azure;
-		}
-		
-		.div3 {
-			grid-column-start: 1;
-			grid-column-end: 2;
-			grid-row-start: 2;
-			grid-row-end: 5;
+			.div1 {
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 2;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+				font-size: 2vw;
+
+				.h1 {
+					margin-top: -10px;	
+				}
+			}
 			
+			.div2 {
+				grid-column-start: 3;
+				grid-column-end: 4;
+				grid-row-start: 1;
+				grid-row-end: 3;
 
-			background-color: azure;
-		}
-		
-		.div4 {
-			grid-column-start: 2;
-			grid-column-end: 3;
-			grid-row-start: 2;
-			grid-row-end: 4;
-
-			background-color: azure;
-		}
-		
-		.div5 {
-			grid-column: span 3 / span 3;
-			grid-column-start: 2;
-			grid-row-start: 4;
-
-			background-color: azure;
-		}
-
-		.div6 {
+				animation-delay: 0.2s;
+			}
 			
-		}
+			.div3 {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 2;
+				grid-row-end: 5;
+				
+				animation-delay: 0.6s;
+
+				height: 400px;
+			}
+			
+			.div4 {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 2;
+				grid-row-end: 4;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.gitavatarimg {
+					width: 8vw;
+					border-radius: 100%;
+				}
+			}
+			
+			.div5 {
+				grid-column-start: 3;
+				grid-column-end: 4;
+				grid-row-start: 3;
+				grid-row-end: 4;
+
+				animation-delay: 0.4s;
+
+			}
+
+			.div6 {
+				grid-column-start: 2;
+				grid-column-end: 4;
+				grid-row-start: 4;
+				grid-row-end: 5;
+
+				animation-delay: 0.5s;
+			}
 			 
 		}
 	}
