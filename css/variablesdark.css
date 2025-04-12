@@ -1,0 +1,13 @@
+:root {
+	--mcgray: #393E46;
+	--mcblack: #222831;
+	--mcyellow: #027B7F;
+    --mcorange:#c46800;
+	--mcbgtag: #C0111111;
+	--mclblue: #375b94;
+	--mcdblue: #233858;
+}
+
+.darkmode {
+    background-color: var(--yellow);
+}

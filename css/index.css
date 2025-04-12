@@ -23,34 +23,8 @@
 	font-family: Minecraften;
 	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
 }
-:root {
-	--mcgray: #393E46;
-	--mcblack: #222831;
-	--mcyellow: #e4964e;
-	--mcbgtag: #C0111111;
-	--mclblue: #375b94;
-	--mcdblue: #233858;
-}
-
-/* Should be on other sites */
-.mainbody {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	padding: 0 10px;
-}
-
-.maindiv {
-	width: 100%;
-	max-width: 1800px;
-	margin: 18px;
-}
-/* to here */
 
 body {
-	min-height: 100vh;
-	min-height: 100dvh;
 	background-color: var(--mcyellow);
 
 	h1 {
@@ -77,7 +51,7 @@ body {
 		.avatardiv {
 			/* background-color: var(--mcblack); */
 
-			color: var(--mcyellow);
+			color: var(--mctext);
 			grid-column-start: 1;
 			grid-column-end: 2;
 			max-height: 350px;
@@ -93,14 +67,14 @@ body {
 				height: auto;
 
 				aspect-ratio: 1/1;
-				box-shadow: 14px 14px 1px var(--mcblack);
+				box-shadow: 14px 14px 1px var(--mctext);
 				border-radius: 30px;
 			}
 		}
 		.avatardescriptiondiv {
 			/* background-color: var(--mcblack); */
 
-			color: var(--mcblack);
+			color: var(--mctext);
 			grid-column-start: 2;
 			grid-column-end: 4;
 			max-height: 350px;
@@ -141,7 +115,7 @@ body {
 				}
 
 				button {
-					background-color: var(--mcblack);
+					background-color: var(--mctext);
 					color: var(--mcyellow);
 					height: 30px;
 					padding: 0px 10px;

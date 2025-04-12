@@ -28,17 +28,28 @@
 :root {
 	--mcgray: #393E46;
 	--mcblack: #222831;
+
 	--mcyellow: #e4964e;
-    --mcorange:#c46800;
+    --mcorange:#027B7F;
+
 	--mcbgtag: #C0111111;
-	--mclblue: #375b94;
-	--mcdblue: #233858;
+
+	--mctext: #222831;
+	--mctexthover: #d6bc8c;
+	--mctextnav: #e4964e;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
 }
 
 .mainbody {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
+	margin-top: -100px;
 
 	padding: 0 10px;
 }
@@ -73,12 +84,10 @@ p
 .pigdiv {
 	width: 100vw;
 
-	padding: 0;
-
 	marquee {
 		position: absolute;
 		width: 100%;
-		bottom: 0;
+		bottom: 0%;
 
 		display: flex;
 	}
