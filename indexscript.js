@@ -1,8 +1,8 @@
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 const avadiv = document.getElementById('avatardescriptiondiv')
+
 const img = document.getElementById('imgdiv')
-const togglemode = document.getElementById('lantern')
 const lanternimg = document.getElementById('lanternimg')
 
 const media=window.matchMedia("(width <= 860px)")
@@ -47,11 +47,13 @@ updateNavbar(media)
 // DARK MODE
 
 let isdark = false
+console.log(isdark) 
 
-togglemode.addEventListener('click', () => {
+function darkmode(){
     if (isdark) {
         isdark = false
-        lanternimg.src = "lantern_dark.webp";
+        
+        lanternimg.src = "css/res/lantern_dark.png";
         document.documentElement.style.setProperty('--mcgray', '#393E46');
         document.documentElement.style.setProperty('--mcblack', '#222831');
         document.documentElement.style.setProperty('--mcyellow', '#e4964e');
@@ -61,13 +63,11 @@ togglemode.addEventListener('click', () => {
         document.documentElement.style.setProperty('--mctextnav', '#e4964e');
     } else {
         isdark = true
-        lanternimg.src = "lantern_light.webp";
+        lanternimg.src = "css/res/lantern_light.png";
         document.documentElement.style.setProperty('--mcyellow', '#027B7F');
         document.documentElement.style.setProperty('--mcyellow', '#027B7F');
         document.documentElement.style.setProperty('--mcyellow', '#027B7F');
         document.documentElement.style.setProperty('--mcyellow', '#027B7F');
         document.documentElement.style.setProperty('--mcyellow', '#027B7F');
     }
-
-
-})
+}
