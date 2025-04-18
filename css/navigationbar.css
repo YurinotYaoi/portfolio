@@ -56,7 +56,7 @@ body {
 
 /* Navigation Top Bar */
 #navbar {
-	background-color: var(--mcgray);
+	background-color: var(--navbarbg);
 	border-bottom: 10px solid var(--mcblack);
 
 	width: 100%;

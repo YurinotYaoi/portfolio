@@ -32,9 +32,15 @@
 				<li class="projectsli"><a href="projects.html" class="projectsa"><p class="projectp">Projects</p></a></li>
 			</ul>
 		</nav>
+
+		<!-- Dark Mode -->
+
 		<div class="lanterndiv">
-			<img id="lanternimg" onclick="darkmode()"class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			<button id="themeswitcher">
+			<img id="lanternimg" class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			</button>
 		</div>
+
 	</div>
 
 	<div id="overlay" class="hiddenoverlay" onclick="closeSidebar()" aria-hidden="true"></div>
@@ -47,7 +53,9 @@
 			<div class="containerdiv">
 				<div class="griddiv">
 					<div class="div1 animate__animated animate__fadeInLeft"><h1>YurinotYaoi</h1></div>
-					<div class="div2 animate__animated animate__fadeInDown">2</div>
+					<div class="div2 animate__animated animate__fadeInDown">
+						<img src="css/res/minecraft-axelotle.gif">
+					</div>
 					<div class="div3 animate__animated animate__fadeInUp">3</div>
 					<div class="div4 animate__animated animate__fadeIn">
 						<img src="https://avatars.githubusercontent.com/u/160141029?v=4&size=64" class="gitavatarimg">
@@ -59,11 +67,12 @@
 		</div>
 	</main>
 
-	<script src="indexscript.js" defer></script>
-
-	<!-- Pig  -->
+	<!-- Pig -->
 	<div class="pigdiv">
-			<marquee direction="right" scrollamount="10"><img src="css/res/walkingpiggif.gif" class="pigimg"></marquee>
-		</div>
+		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
+	</div>
+	
+	<script src="indexscript.js" defer></script>
+	
 </body>
 </html>

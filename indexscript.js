@@ -1,10 +1,14 @@
+
+// Navbar
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 const ol = document.getElementById('overlay')
-const avadiv = document.getElementById('avatardescriptiondiv')
 
-const img = document.getElementById('imgdiv')
-const lanternimg = document.getElementById('lanternimg')
+// Darkmode Switcher
+let darkmode = localStorage.getItem('darkmode')
+const themeswitch = document.getElementById('themeswitcher')
+const lantern = document.getElementById('lanternimg')
+const pig = document.getElementById('pigimg')
 
 const media=window.matchMedia("(width <= 860px)")
 
@@ -17,24 +21,10 @@ function updateNavbar(e){
 
     if(isMobile) {
         navbar.setAttribute('inert','')
-
-        // avadiv.classList.remove('animate__bounceInRight')
-        // avadiv.classList.add('animate__backInUp')
-        // img.classList.remove('animate__fadeInLeft')
-        // img.classList.add('animate__backInDown')
-
     } else {
         navbar.removeAttribute('inert')
-
-        // avadiv.classList.remove('animate__backInUp')
-        // avadiv.classList.add('animate__bounceInRight')
-        // img.classList.remove('animate__backInDown')
-        // img.classList.add('animate__fadeInLeft')
     }
 }
-
-    ol.classList.add('hiddenoverlay')
-    ol.classList.remove('shownoverlay')
 
 function openSidebar(){
     navbar.classList.add('show')
@@ -52,38 +42,28 @@ function closeSidebar(){
     ol.classList.remove('shownoverlay')
 }
 
-
-
 updateNavbar(media)
 
-// DARK MODE
+function enableDarkmode() {
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkmode', 'active')
+    lantern.src = "css/res/lantern_light.png"
 
-let isdark = false
-console.log("Dark:", isdark)
+    pig.src = "css/res/minecraft-sniffer.gif"
+}
 
-function darkmode(){
-    if (isdark) {
-        isdark = false
-        
-        lanternimg.src = "css/res/lantern_dark.png";
-        document.documentElement.style.setProperty('--mcgray', '#393E46');
-        document.documentElement.style.setProperty('--mcblack', '#222831');
-        document.documentElement.style.setProperty('--mcyellow', '#e4964e');
-        document.documentElement.style.setProperty('--mcorange', '#027B7F');
-        document.documentElement.style.setProperty('--mctext', '#222831');
-        document.documentElement.style.setProperty('--mctexthover', '#d6bc8c');
-        document.documentElement.style.setProperty('--mctextnav', '#e4964e');
-        console.log("Dark:", isdark)
+function disableDarkmode() {
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkmode', null)
+    lantern.src = "css/res/lantern_dark.png"
 
-    } else {
-        isdark = true
-        lanternimg.src = "css/res/lantern_light.png";
-        document.documentElement.style.setProperty('--mcyellow', '#027B7F');
-        document.documentElement.style.setProperty('--mcyellow', '#027B7F');
-        document.documentElement.style.setProperty('--mcyellow', '#027B7F');
-        document.documentElement.style.setProperty('--mcyellow', '#027B7F');
-        document.documentElement.style.setProperty('--mcyellow', '#027B7F');
-        console.log("Dark:", isdark)
+    pig.src = "css/res/minecraft-pig.gif"
+}
 
-    }
-}    
+if(darkmode === "active") {
+    enableDarkmode()
+}
+themeswitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()    
+})

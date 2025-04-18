@@ -32,22 +32,28 @@
 				<li class="projectsli"><a href="projects.html" class="projectsa"><p class="projectp">Projects</p></a></li>
 			</ul>	
 		</nav>
+
+		<!-- Dark Mode -->
+
 		<div class="lanterndiv">
-			<img id="lanternimg" onclick="darkmode()"class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			<button id="themeswitcher">
+			<img id="lanternimg" class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			</button>
 		</div>
+
 	</div>
 
-	<div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+	<div id="overlay" onclick="closeSidebar()" class="hiddenoverlay" aria-hidden="true"></div>
 
 	<!-- main body -->
 	<main class="mainbody">
 		<div class="maindiv">
 			<!-- grid -->
 			<div class="griddiv">
-					<div id="imgdiv"class="avatardiv animate__animated animate__fadeInLeft">
+					<div id="imgdiv" class="avatardiv">
 						<img src="css/res/angelo.jpg" alt="Angelo's Picture">
 					</div>
-					<div id="avatardescriptiondiv"class="avatardescriptiondiv animate__animated animate__bounceInRight">
+					<div id="avatardescriptiondiv"class="avatardescriptiondiv">
 						<h1>Angelo Uriel T. Solamo</h1>
 						<h2>Undergraduate</h2>
 						<p>Saint Dominic College of Asia</p>
@@ -72,11 +78,12 @@
 
 	</main>
 
-	<script src="indexscript.js" defer></script>
-
 	<!-- Pig -->
 	<div class="pigdiv">
-		<marquee direction="right" scrollamount="10"><img src="css/res/walkingpiggif.gif" class="pigimg"></marquee>
+		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
 	</div>
+	
+	<script src="indexscript.js" defer></script>
+
 </body>
 </html>

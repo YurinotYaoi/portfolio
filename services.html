@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link href="css/services.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angelo Uriel Solamo | Services</title>
@@ -31,12 +32,18 @@
 				<li class="projectsli"><a href="projects.html" class="projectsa"><p class="projectp">Projects</p></a></li>
 			</ul>
 		</nav>
+
+		<!-- Dark Mode -->
+
 		<div class="lanterndiv">
-			<a id="lantern"><img class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.webp"></a>
+			<button id="themeswitcher">
+			<img id="lanternimg" class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			</button>
 		</div>
+
 	</div>
 
-	<div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+	<div id="overlay" class="hiddenoverlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
     <!-- main body -->
     <main class="mainbody">
@@ -44,6 +51,12 @@
 			Contents
 		</div>
 	</main>
+
+	<!-- Pig -->
+	<div class="pigdiv">
+		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
+	</div>
+	
 	<script src="indexscript.js" defer></script>
 </body>
 </html>

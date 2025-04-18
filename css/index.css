@@ -1,30 +1,5 @@
-/* fonts */
-@font-face {
-	font-family: Minecraft;
-	src: url('res/font/minecraftregular.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	font-weight: bold;
-	src: url('res/font/minecraftbold.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	font-style: italic;
-	src: url('res/font/minecraftitalic.otf');
-}
-@font-face {
-	font-family: Minecraft;
-	src: url('res/font/minecraftbolditalic.otf');
-	font-weight: bold;
-	font-style: italic;
-}
-@font-face {
-	font-family: Minecraften;
-	src: url('res/font/minecraft-ten-font/MinecraftTen-VGORe.ttf');
-}
-
 body {
+	overflow-y: hidden;
 	background-color: var(--mcyellow);
 
 	h1 {
@@ -60,6 +35,9 @@ body {
 			justify-content: right;
 			align-items: center;
 
+			animation: fadeInLeft;
+			animation-duration: 0.5s;
+
 			img {
 				width: 30vw;
 				min-width: 400px;
@@ -67,7 +45,7 @@ body {
 				height: auto;
 
 				aspect-ratio: 1/1;
-				box-shadow: 14px 14px 1px var(--mctext);
+				box-shadow: 14px 14px 1px var(--mcbgtag);
 				border-radius: 30px;
 			}
 		}
@@ -81,6 +59,9 @@ body {
 
 			display: flex;
 			flex-direction: column;
+
+			animation: bounceInRight;
+			animation-duration: 1s;
 
 			h1 {
 				font-size: 5.3rem;
@@ -121,6 +102,7 @@ body {
 					padding: 0px 10px;
 
 					border-radius: 20px;
+					border-width: 0px;
 
 					justify-self: center;
 
@@ -150,8 +132,10 @@ body {
 
 @media screen and (max-width: 860px) {
 	body {
+		overflow-y: scroll;
 		min-height: auto;
 		background-color: var(--mcyellow);
+		padding-bottom: 30px;
 
 		.griddiv {
 			/* background-color: aliceblue; */
@@ -175,6 +159,9 @@ body {
 				justify-content: right;
 				align-items: center;
 
+				animation: fadeInDown;
+				animation-duration: 1s;
+
 				img {
 					width: 15em;
 					min-width: 30px;
@@ -194,6 +181,9 @@ body {
 				color: var(--mcblack);
 				max-height: 350px;
 				
+				animation: bounceInUp;
+				animation-duration: 1s;
+
 				h1 {
 					font-size: 3.5rem;
 
