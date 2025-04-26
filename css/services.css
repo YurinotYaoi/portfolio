@@ -1,6 +1,6 @@
 body {
     overflow-y: hidden;
 	background-color: var(--mcyellow);
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Shooting_of_Donald_Trump.webp/387px-Shooting_of_Donald_Trump.webp.png);
+    background-image: url('./res/minecraft-honeycomb.png');
     background-size: cover;
 }
