@@ -97,6 +97,18 @@ body {
 				background-size: 10vh;
 
 				animation-delay: 0.5s;
+
+				display: flex;
+				flex-direction: column;
+
+				justify-content: center;
+
+				p {
+					text-align: center;
+
+					color: var(--mcblack);
+				}
+				}
 			}
 
 			.div6 {
@@ -136,7 +148,6 @@ body {
 	}
 	
 
-}
 
 @media screen and (max-width: 860px) {
 	body {
