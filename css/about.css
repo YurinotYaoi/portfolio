@@ -1,7 +1,4 @@
 body {
-	background-color: var(--mcyellow);
-	height: 100dvh;
-	
 	.containerdiv {
 		width: 100%;
 		display: flex;
@@ -141,7 +138,6 @@ body {
 	body {
 		overflow-y: scroll;
 		min-height: auto;
-		background-color: var(--mcyellow);
 		padding-bottom: 30px;
 
 		.containerdiv {
@@ -228,6 +224,5 @@ body {
 					}
 				}
 		}
-
 	}
 }

@@ -14,6 +14,11 @@
 
 		z-index: 10;
 
+		p::after {
+			content: '';
+			background-color: red;
+		}
+
 		ul {
 			list-style: none;
 			display: flex;
@@ -53,17 +58,13 @@
 	}
 
 	.lanterndiv{
-		position: sticky;
-
 		display: flex;
 		flex-direction: column;
 		align-items: end;
 
-		z-index: 10;
+		z-index: 9;
 
 		.lanternimg {
-			position: sticky;
-
 			--animate-duration: 3s;
 
 			margin-top: -30px;
@@ -102,6 +103,7 @@
 	}
 	#open-sidebar-button {
 		margin-left: auto;
+		z-index: 10;
 	}
 	#navbar {
 		position: fixed;
@@ -128,27 +130,36 @@
 				li {
 					border-bottom: 5px solid var(--mcblack);
 				}
-				.homeli {
-					margin-right: unset;
-					border: 0;
-					padding-bottom: min(1.5em, 5vh);
-					h1 {
-						padding-right: 100%;
-					}
-				}
-				.educationli {
-					border-top: 5px solid var(--mcblack);
-				}
 				a {
 				width: 100%;
 				font-size: 1.5rem;
 				}
-
-				
+				.homeli {
+					width: 100%;
+				}
 			}
 		}
 
 	nav.show {
 		right: 0;
+	}
+	.lanterndiv{		
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		display: block;
+		flex-direction: column;
+		align-items: start;
+
+		z-index: 9;
+
+		.lanternimg {
+			--animate-duration: 3s;
+
+			margin-top: -90px;
+
+			width: 140px;
+		}
 	}
 }

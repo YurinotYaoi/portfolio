@@ -1,6 +1,0 @@
-body {
-    overflow-y: hidden;
-	background-color: var(--mcyellow);
-    background-image: url('./res/minecraft-honeycomb.png');
-    background-size: cover;
-}
