@@ -1,5 +1,4 @@
 body {
-	overflow-y: hidden;
 	background-color: var(--mcyellow);
 
 	h1 {
@@ -17,11 +16,10 @@ body {
 		gap: 1.5rem;
 		grid-template-columns: 1fr 1fr 1fr ;
 		
-		align-self: center;
-		margin-bottom: -60px;
+		flex: 0 1 auto;
 		
 		min-height: 500px;
-		height: 90vh;
+		height: 100%;
 
 		.avatardiv {
 			/* background-color: var(--mcblack); */
@@ -101,6 +99,8 @@ body {
 					border-radius: 20px;
 					border-width: 0px;
 
+					margin-bottom: 10px;
+
 					justify-self: center;
 
 					display: flex;
@@ -135,8 +135,6 @@ body {
 		padding-bottom: 30px;
 
 		.griddiv {
-			/* background-color: aliceblue; */
-
 			height: auto;
 
 			display: flex;
@@ -148,10 +146,6 @@ body {
 			margin-bottom: 0px;
 
 			.avatardiv {
-				/* background-color: var(--mcblack); */
-
-				color: var(--mcyellow);
-
 				display: flex;
 				justify-content: right;
 				align-items: center;
@@ -175,7 +169,6 @@ body {
 				/* background-color: var(--mcblack); */
 
 				margin-top: 0px;
-				color: var(--mcblack);
 				max-height: 350px;
 				
 				animation: bounceInUp;

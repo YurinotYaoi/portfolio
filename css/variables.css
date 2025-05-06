@@ -37,6 +37,8 @@
 
 	--navbarbg: #393E46;
 	--mctextnav: #e4964e;
+
+	--mcwater: #0064bd;
 }
 
 .darkmode {
@@ -57,38 +59,55 @@
 body {
 	min-height: 100vh;
 	min-height: 100dvh;
-}
+	max-width: 100%;
+	h1 {
+		font-family: 'Minecraften';
+	} 
+	h2 {
+		font-family: 'Minecraften';
+	}
+	p 
+	{
+		font-family: 'Minecraft';
+		margin: 0;
 
-.mainbody {
+	}
+	.mainbody {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column;
 	align-items: center;
-	
+	flex: 1 1 auto;
+
+	height: 100%;
 	margin-top: -100px;
 
 	padding: 0 10px;
-}
 
-.maindiv {
-	width: 100%;
-	max-width: 1800px;
-	margin: 18px;
+		.maindiv {
+		width: 100%;
+		max-width: 1800px;
+		margin: 18px;
+		}
+	}
 }
 
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
-#themeswitcher {
+.lanterndiv {
+
+	#themeswitcher {
 	background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+	}
 }
+
 
 .activesite {
 	text-decoration: underline;
