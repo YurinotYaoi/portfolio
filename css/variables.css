@@ -61,11 +61,20 @@
 	padding: 0;
 }
 
+::-webkit-scrollbar {
+     display: none; /*Disable Scrollbar */
+}
+
 body {
 	min-height: 100vh;
 	min-height: 100dvh;
 	max-width: 100%;
-	
+
+	overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+
 	background-color: var(--mcyellow);
 
 	h1 {
@@ -89,7 +98,7 @@ body {
 	margin-top: -100px;
 
 	padding: 0 10px;
-	
+
 		.maindiv {
 		width: 100%;
 		max-width: 1800px;
