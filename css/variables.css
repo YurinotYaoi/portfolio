@@ -29,6 +29,7 @@
 	--mcgray: #393E46;
 	--mcblack: #222831;
 	--mcyellow: #e4964e;
+	--mcbackground: #393E46; 
 
 	--mcbgtag: #222831;
 
@@ -39,12 +40,17 @@
 	--mctextnav: #e4964e;
 
 	--mcwater: #0064bd;
+
+	--greenish: #28768a;
+
+	--techcolor: #222831;
 }
 
 .darkmode {
 	--mcgray: #c08b59;
 	--mcblack: #181a20;
 	--mcyellow: #232830;
+	--mcbackground: #181a20; 
 
 	--mcbgtag: #181a20;
 
@@ -164,4 +170,15 @@ body {
 		margin-top: 20px;
 		}
 	}
+}
+
+.custom-popover {
+	--bs-popover-border-color: var(--mcblack);
+	--bs-popover-header-bg: var(--greenish);
+	--bs-popover-header-color: var(--techcolor);
+	--bs-popover-body-color: var(--mcyellow);
+	--popover-border-color: var(--techcolor);
+
+	background-color: var(--mcgray);
+	font-family: 'Minecraft';
 }

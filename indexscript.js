@@ -1,4 +1,6 @@
-
+// popovers
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 // Navbar
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
@@ -11,6 +13,7 @@ const lantern = document.getElementById('lanternimg')
 const pig = document.getElementById('pigimg')
 
 const media=window.matchMedia("(width <= 860px)")
+
 
 media.addEventListener('change', (e) => updateNavbar(e))
 
