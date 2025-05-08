@@ -251,10 +251,6 @@ body {
 			justify-content: center;
 			width: min(1800px, 100vw);
 
-			/* border-color: #0064bd;
-			border-width: 20px;
-			border-style: solid; */
-
 			.techtitle {
 				padding: 20px;
 				padding-right: 70px;
@@ -265,20 +261,29 @@ body {
 				width: fit-content;
 				color: var(--mcblack);
 
-				p {
-					font-size: 40px;
+				h2 {
+					font-size: 20px;
+					width: 200px;
 				}
 			}
-
+			/* Accordion Body */
+			.accordion-collapse {
+				
+				padding-top: 20px;
+				p {
+					text-align: center;
+					color: var(--mctextnav);
+					font-size: 25px;
+				}
+			}
 			.tech-stack-grid {
 				padding: 20px;
-				margin-top: 20px;
-				margin-bottom: 20px;
+				padding-top: 0;
 				width: 100%;
 
 				display: grid;
-				grid-template-columns: repeat(auto-fit, min(500px, 10vw));
-				gap: 15px;
+				grid-template-columns: repeat(auto-fit, min(200px, 10vw));
+				gap: 25px;
 
 				justify-content: center;
 
@@ -297,21 +302,62 @@ body {
 					}
 				}
 			}
-
+			/* Different Tech Stack Grid Classes */
 			.techlanguages {
-				width: 75%;
+				width: min(800px, 75%);
 				background-color: var(--techcolor);
 				border-radius: 30px;
 			}
 
 			.techtools {
 				margin-top: 20px;
-				width: 75%;
+				width: min(800px, 75%);
 				background-color: var(--techcolor);
 				border-radius: 30px;
+			}
+		}
 
-				p {
-					margin: 0 100px 0 0 ;
+		.certificatesbody {
+			margin: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: min(1800px, 95vw);
+
+			.certificatetitle {
+				background-color: var(--greenish);
+				height: auto;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				border-radius: 30px 0 0 30px;
+				h1 {
+					transform: rotate(270deg);
+					font-size: min(20px, 3vw);
+				}
+			}
+			.certificatecontents {
+				width: min(1350px, 75vw);
+				background-color: var(--techcolor);
+				padding: 20px;
+				border-radius: 0 30px 30px 0;
+
+				.certificategrid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, min(400px, 20vw));
+					gap: 25px;
+
+					.card {
+						background-color: transparent;
+						border: 0;
+
+						img {
+							width: 100%;
+							border-radius: 20px;
+						}
+					}
 				}
 			}
 		}
@@ -377,10 +423,9 @@ body {
 						grid-row-start: 4;
 						grid-row-end: 6;
 
-						padding-top: 30px;
 
 						p {
-							font-size: 10px;
+							font-size: 13px;
 						}
 					}
 					
@@ -417,7 +462,6 @@ body {
 						}
 						p {
 							font-size: min(15px, 3vw);
-							color: var(--mcyellow);
 						}
 
 						.timeline-steps .timeline-content {
@@ -453,5 +497,77 @@ body {
 					}
 				}
 			}
+		.bottombackground {
+
+			.techstacktitle {
+				width: 100vw;
+				border-radius: 0;
+				h1 {
+					font-size: 10vw;
+				}
+			}
+
+			.techstackbody {
+
+				.techtitle {
+
+					h2 {
+						width: 100px;
+					}
+				}
+
+				.tech-stack-grid {
+					padding: 20px;
+					padding-top: 0;
+					width: 100%;
+	
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+
+					.btn {
+						background-color: var(--mcbackground);
+						border: 0;
+					}
+				}
+			}
+
+			.certificatesbody {
+				flex-direction: column;
+				
+				.certificatetitle {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+	
+					border-radius: 30px 30px 0 0;
+					height: 60px;
+
+					h1 {
+						transform: rotate(0deg);
+						font-size: 20px;
+					}
+				}
+
+				.certificatecontents {
+					width: 100%;
+
+					border-radius: 0 0 30px 30px;
+
+					.certificategrid {
+						display: grid;
+						grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+						gap: 25px;
+	
+						.card {
+							img {
+								width: 100%;
+								border-radius: 20px;
+							}
+						}
+					}
+				}
+			}
+
 		}
 	}
+}

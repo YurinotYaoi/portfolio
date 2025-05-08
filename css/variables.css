@@ -170,13 +170,11 @@ body {
 	}
 }
 
-.custom-popover {
-	--bs-popover-border-color: var(--mcblack);
-	--bs-popover-header-bg: var(--greenish);
-	--bs-popover-header-color: var(--techcolor);
-	--bs-popover-body-color: var(--mcyellow);
-	--popover-border-color: var(--techcolor);
+.custom-tooltip {
+	--bs-tooltip-bg: var(--mcgray);
+	--bs-tooltip-color: var(--mcyellow);
+	--bs-tooltip-opacity: 100;
 
-	background-color: var(--mcgray);
 	font-family: 'Minecraft';
+	font-size: 20px;
 }
