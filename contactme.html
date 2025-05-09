@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Frameworks -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+	<head>
+		<!-- Frameworks -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
-	<!-- CSS -->
-	<link href="css/variables.css" rel="stylesheet">
-    <link href="css/navigationbar.css" rel="stylesheet">
-	<link href="css/contactme.css" rel="stylesheet">
+		<!-- CSS -->
+			<link href="css/variables.css" rel="stylesheet">
+			<link href="css/navigationbar.css" rel="stylesheet">
+			<link href="css/contactme.css" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo Uriel Solamo | Projects</title>
-</head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Angelo Uriel Solamo | Contact Me</title>
+	</head>
 <body class="overflow-x-hidden">
 	<!-- Topnavbar -->
     <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar button" aria-expanded="false" aria-controls="navbar">
@@ -29,7 +30,7 @@
 					</button>
 				</li>
 				<li class="homeli">
-					<a href="index.html"><h1 class="activesite">Yuri</h1></a></li>
+					<a href="index.html"><h1>Yuri</h1></a></li>
 				<li class="aboutli">
 					<a href="about.html" class="abouta"><p class="aboutp">About Me</p></a></li>
 				<li class="contactmeli">
@@ -39,11 +40,9 @@
 
 	<!-- Dark Mode -->
 
-	<div class="lanterndiv">
 		<button id="themeswitcher">
 		<img id="lanternimg" class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
 		</button>
-	</div>
 
 	</div>
 
@@ -52,7 +51,41 @@
     <!-- main body -->
 	<main class="mainbody">
 		<div class="maindiv">
-			Contents
+			<div class="formcontainer animate__animated animate__fadeInUp">
+				<div class="formtitle animate__animated animate__fadeInDownBig animate__slow">
+					<h1>Contact Me!!!</h1>
+				</div>
+
+				<div class="formcontents">
+					<div class="contactsdiv">
+						<a href="https://github.com/YurinotYaoi" target="_blank"><button><i class="fa fa-github"></i>
+							<p>Github</p>
+						</button></a>
+
+						<a href="https://www.linkedin.com/in/angelo-uriel-solamo-b1207b293/" target="_blank"><button><i class='fa fa-linkedin-square'></i>
+							<p>LinkedIn</p>
+						</button></a>
+					</div>
+
+					<form action="https://formspree.io/f/mgvkzard"
+					method="POST">
+						<p>Name:</p>
+						<label>
+							<input type="text" name="name" required>
+						</label>
+						<label>
+
+						</label>
+						<p>Your Message:</p>
+						<label>
+							<textarea name="message" required></textarea>
+						</label>
+
+						<!-- your other form fields go here -->
+						<button class="hoverbutton" type="submit"><p>Send!!!</p></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</main>
 
@@ -60,7 +93,8 @@
 	<div class="pigdiv">
 		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
 	</div>
-	
+
+	<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 	<script src="indexscript.js" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 

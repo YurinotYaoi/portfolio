@@ -62,21 +62,24 @@
 			}	
 		}
 	}
+	#themeswitcher {
+		color: transparent;
+		background-color: transparent;
+		border-width: 0px;
 
-	.lanterndiv{
-		display: flex;
-		flex-direction: column;
-		align-items: end;
+		width: fit-content;
 
-		z-index: 0;
+		align-self: flex-end;
+	}
+	
+	.lanternimg {
+		background-color: transparent;
+		--animate-duration: 3s;
 
-		.lanternimg {
-			--animate-duration: 3s;
+		margin-top: -30px;
 
-			margin-top: -30px;
+		width: 140px;
 
-			width: 140px;
-		}
 	}
 }
 
@@ -88,7 +91,7 @@
 	background-color: rgba(0,0,0,0.5);
 	position: fixed;
 	inset: 0;
-	z-index: 9;
+	z-index: -1;
 	}
 
 	.hiddenoverlay {
@@ -148,23 +151,18 @@
 	nav.show {
 		right: 0;
 	}
-	.lanterndiv{		
-		position: fixed;
+
+	.lanternimg {
+		position: absolute;
 		top: 0;
 		left: 0;
 
-		display: block;
-		flex-direction: column;
-		align-items: start;
+		--animate-duration: 3s;
 
-		z-index: 9;
+		margin-top: -90px;
 
-		.lanternimg {
-			--animate-duration: 3s;
+		width: 140px;
 
-			margin-top: -90px;
-
-			width: 140px;
-		}
 	}
+	
 }

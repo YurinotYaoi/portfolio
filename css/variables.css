@@ -29,7 +29,7 @@
 	--mcgray: #393E46;
 	--mcblack: #222831;
 	--mcyellow: #e4964e;
-	--mcbackground: #393E46; 
+	--mcbackground: #2c2f33; 
 
 	--mcbgtag: #222831;
 
@@ -65,6 +65,8 @@
 *{
 	margin: 0;
 	padding: 0;
+
+	cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -177,4 +179,11 @@ body {
 
 	font-family: 'Minecraft';
 	font-size: 20px;
+}
+
+
+@media screen and (max-width: 860px){
+	* {
+		cursor:auto;
+	}
 }

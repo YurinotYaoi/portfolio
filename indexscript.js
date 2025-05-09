@@ -17,6 +17,11 @@ const media=window.matchMedia("(width <= 860px)")
 
 media.addEventListener('change', (e) => updateNavbar(e))
 
+new kursor({
+    type: 3,
+    color: '#ffffff'
+})
+
 function updateNavbar(e){
     // console.log(e)
     const isMobile = e.matches
