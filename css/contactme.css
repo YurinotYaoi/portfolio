@@ -12,7 +12,7 @@ body {
 
     width: min(900px, 70vw);
     height: 500px;
-    background-color: var(--mcgray);
+    background-color: var(--mcbgtag);
     border-radius: 30px;
 
         .formtitle {
@@ -67,7 +67,7 @@ body {
                 width: 50%;
                 height: 100%;
                 p {
-                    color: var(--mcyellow);
+                    color: var(--mctextnav);
                 }
                 input, textarea{
                     padding: 10px;

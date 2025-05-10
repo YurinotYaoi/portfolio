@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
-			<link rel="icon" href="css/res/Ore-Diamond.png" type="png">
 		<!-- Frameworks -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -19,12 +17,12 @@
 			<title>Angelo Uriel Solamo | about</title>
 	</head>
 <body class="overflow-x-hidden">
-    <!-- Topnavbar -->
+	<!-- Topnavbar -->
     <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar button" aria-expanded="false" aria-controls="navbar">
 		<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#393E46"><path d="M142.7-211.04q-21.04 0-34.8-14.2-13.75-14.2-13.75-34.64 0-20.63 13.75-34.3 13.76-13.67 34.8-13.67h675.27q20.39 0 34.32 13.79 13.94 13.79 13.94 34.42 0 20.44-13.94 34.52-13.93 14.08-34.32 14.08H142.7Zm0-220.84q-21.04 0-34.8-14.2-13.75-14.2-13.75-34.26 0-20.63 13.75-34.3 13.76-13.68 34.8-13.68h675.27q20.39 0 34.32 13.79 13.94 13.79 13.94 34.42 0 20.07-13.94 34.15-13.93 14.08-34.32 14.08H142.7Zm0-221.03q-21.04 0-34.8-13.92-13.75-13.91-13.75-34.92 0-20.06 13.75-34.02 13.76-13.96 34.8-13.96h675.27q20.39 0 34.32 14.08 13.94 14.07 13.94 34.14 0 21-13.94 34.8-13.93 13.8-34.32 13.8H142.7Z"/></svg>
 	</button>
 	<div class="navbardiv">
-        <nav id="navbar">
+		<nav id="navbar">
 			<ul>
 				<li class="close-sidebar-button-li">
 					<button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar button">
@@ -35,11 +33,11 @@
 					<a href="index.html"><h1>Yuri</h1></a></li>
 				<li class="aboutli">
 					<a href="about.html" class="abouta"><p class="aboutp">About Me</p></a></li>
-                <li class="contactmeli">
-                    <a href="techstack.html" class="contactmea"><p class="contactmep activesite">Tech Stack</p></a></li>
+				<li class="contactmeli">
+					<a href="techstack.html" class="contactmea"><p class="contactmep activesite">Tech Stack</p></a></li>
 				<li class="contactmeli">
 					<a href="contactme.html" class="contactmea"><p class="contactmep">Contact Me</p></a></li>
-			</ul>	
+				</ul>	
 		</nav>
 
 		<!-- Dark Mode -->
@@ -49,11 +47,15 @@
 			</button>
 
 	</div>
+
+	<div id="overlay" class="hiddenoverlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <!-- main body -->
     <main class="mainbody">
-		<div class="maindiv">
-			<div class="bottombackground">
+
+		<div class="bottombackground">
 				<!-- Title -->
-				<div class="techstacktitle animate__animated animate__fadeInDown">
+				<div class="techstacktitle animate__animated animate__slideInDown">
 					<h1>Tech Stack</h1>
 				</div>
 
@@ -61,11 +63,11 @@
 					<!-- LANGUAGES -->
 					<div class="techlanguages animate__animated animate__fadeInLeft animate__delay-1s">
 						<!-- Accordion Button -->
-						<div class="techtitle accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<div class="techtitle accordion-header">
 								<h2>Languages</h2>
-							</button>
-						</div>
+							</div>
+						</button>
 						<!-- Accordion Body -->
 						<div id="collapseOne" class="accordion-collapse collapse">
 							<div class="tech-stack-grid">
@@ -136,11 +138,11 @@
 					<!-- Tools -->
 					<div class="techtools animate__animated animate__fadeInRight animate__delay-1s">
 						<!-- Accordion Button -->
-						<div class="techtitle">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-								<h2>Tools</h2>
-							</button>
-						</div>
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+							<div class="techtitle accordion-header">
+								<h2>Languages</h2>
+							</div>
+						</button>
 						<!-- Accordion Body -->
 						<div id="collapseTwo" class="accordion-collapse collapse">	
 							<!-- DEV TOOLS -->
@@ -267,8 +269,9 @@
 					</div>
 				</div>
 			</div>
-        </div>
-    </main>
+		</div>
+	</main>
+
 	<!-- Pig -->
 	<div class="pigdiv">
 		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
