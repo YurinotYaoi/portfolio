@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+			<link rel="icon" href="css/res/Ore-Diamond.png" type="png">
+		<!-- Frameworks -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+		<!-- CSS -->
+			<link href="css/variables.css" rel="stylesheet">
+			<link href="css/navigationbar.css" rel="stylesheet">
+			<link href="css/techstack.css" rel="stylesheet">
+
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Angelo Uriel Solamo | about</title>
+	</head>
+<body class="overflow-x-hidden">
+    <!-- Topnavbar -->
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar button" aria-expanded="false" aria-controls="navbar">
+		<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#393E46"><path d="M142.7-211.04q-21.04 0-34.8-14.2-13.75-14.2-13.75-34.64 0-20.63 13.75-34.3 13.76-13.67 34.8-13.67h675.27q20.39 0 34.32 13.79 13.94 13.79 13.94 34.42 0 20.44-13.94 34.52-13.93 14.08-34.32 14.08H142.7Zm0-220.84q-21.04 0-34.8-14.2-13.75-14.2-13.75-34.26 0-20.63 13.75-34.3 13.76-13.68 34.8-13.68h675.27q20.39 0 34.32 13.79 13.94 13.79 13.94 34.42 0 20.07-13.94 34.15-13.93 14.08-34.32 14.08H142.7Zm0-221.03q-21.04 0-34.8-13.92-13.75-13.91-13.75-34.92 0-20.06 13.75-34.02 13.76-13.96 34.8-13.96h675.27q20.39 0 34.32 14.08 13.94 14.07 13.94 34.14 0 21-13.94 34.8-13.93 13.8-34.32 13.8H142.7Z"/></svg>
+	</button>
+	<div class="navbardiv">
+        <nav id="navbar">
+			<ul>
+				<li class="close-sidebar-button-li">
+					<button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar button">
+						<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#dfab66"><path d="M480.43-412.48 283.94-216.22q-14.17 14.18-34.14 14.29-19.97.12-33.58-14.72-14.41-14.18-14.19-33.43.22-19.25 14.62-34.09L412.71-480 216.22-677.26q-14.41-14.17-14.41-33.43 0-19.25 14.41-34.09 13.61-14.18 33.58-14.06 19.97.12 34.14 14.29l196.49 196.26 195.63-196.26q14.17-14.17 34.14-14.29 19.97-.12 33.58 14.06 14.41 14.84 14.19 34.09-.22 19.26-13.96 33.43L547.96-480l196.05 195.83q13.74 14.4 13.96 33.87.22 19.47-14.19 33.65-13.61 14.84-33.58 14.72-19.97-.11-34.14-14.29L480.43-412.48Z"/></svg>
+					</button>
+				</li>
+				<li class="homeli">
+					<a href="index.html"><h1>Yuri</h1></a></li>
+				<li class="aboutli">
+					<a href="about.html" class="abouta"><p class="aboutp">About Me</p></a></li>
+                <li class="contactmeli">
+                    <a href="techstack.html" class="contactmea"><p class="contactmep activesite">Tech Stack</p></a></li>
+				<li class="contactmeli">
+					<a href="contactme.html" class="contactmea"><p class="contactmep">Contact Me</p></a></li>
+			</ul>	
+		</nav>
+
+		<!-- Dark Mode -->
+
+			<button id="themeswitcher">
+			<img id="lanternimg" class="lanternimg animate__animated animate__swing animate__infinite" src="css/res/lantern_dark.png">
+			</button>
+
+	</div>
+    <main class="mainbody">
+		<div class="maindiv">
+			<div class="bottombackground">
+				<!-- Title -->
+				<div class="techstacktitle animate__animated animate__fadeInDown">
+					<h1>Tech Stack</h1>
+				</div>
+
+				<div class="techstackbody">
+					<!-- LANGUAGES -->
+					<div class="techlanguages animate__animated animate__fadeInLeft animate__delay-1s">
+						<!-- Accordion Button -->
+						<div class="techtitle accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<h2>Languages</h2>
+							</button>
+						</div>
+						<!-- Accordion Body -->
+						<div id="collapseOne" class="accordion-collapse collapse">
+							<div class="tech-stack-grid">
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="C Language">
+										<img src="css/res/tech-c.png">
+									</button>
+								</div>
+
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="XML">
+										<img src="css/res/tech-xml.png">
+									</button>
+								</div>
+
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="Java">
+										<img src="css/res/tech-java.png">
+									</button>
+								</div>
+
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="HTML-5">
+										<img src="css/res/tech-html-5.png">
+									</button>
+								</div>
+
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="CSS-3">
+										<img src="css/res/tech-css-3.png">
+									</button>
+								</div>
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="Java Script">
+										<img src="css/res/tech-javascript.png">
+									</button>
+								</div>
+								<div class="card">
+									<button type="button" class="btn" 
+									data-bs-toggle="tooltip" 
+									data-bs-custom-class="custom-tooltip"
+									data-bs-title="C Language">
+										<img src="css/res/tech-sql.png">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tools -->
+					<div class="techtools animate__animated animate__fadeInRight animate__delay-1s">
+						<!-- Accordion Button -->
+						<div class="techtitle">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								<h2>Tools</h2>
+							</button>
+						</div>
+						<!-- Accordion Body -->
+						<div id="collapseTwo" class="accordion-collapse collapse">	
+							<!-- DEV TOOLS -->
+							<p>IDE's</p>
+								<div class="tech-stack-grid">
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Visual Code Studio">
+											<img src="css/res/tech-tools-vscode.png">
+										</button>
+									</div>
+
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Android Studio">
+											<img src="css/res/tech-tools-Android-Studio.png">
+										</button>
+									</div>
+									
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Apache Netbeans">
+											<img src="css/res/tech-tools-Apache-NetBeans_.png">
+										</button>
+									</div>
+
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Oracle Apex">
+											<img src="css/res/tech-tools-oracle-apex.png">
+										</button>
+									</div>
+
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Github">
+											<img src="css/res/tech-tools-github.png">
+										</button>
+									</div>
+								</div>
+								<!-- Illustration soft -->
+							<p>Other Software</hp>
+								<div class="tech-stack-grid">
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Krita">
+											<img src="css/res/tech-illust-krita.png">
+										</button>
+									</div>
+
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Canva">
+											<img src="css/res/tech-illust-canva.png">
+										</button>
+									</div>
+									
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Capcut">
+											<img src="css/res/tech-illust-capcut.png">
+										</button>
+									</div>
+
+									<div class="card">
+										<button type="button" class="btn" 
+										data-bs-toggle="tooltip" 
+										data-bs-custom-class="custom-tooltip"
+										data-bs-title="Picsart">
+											<img src="css/res/tech-illust-Picsart-Logo.png">
+										</button>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+			<div class="certificatesbody animate__animated animate__fadeInLeft animate__delay-1s">
+				<div class="certificatetitle">
+					<h1>Certificates</h1>
+				</div>
+				<div class="certificatecontents">
+					<div class="certificategrid">
+						<div class="card">
+							<button type="button" class="btn" 
+							data-bs-toggle="tooltip" 
+							data-bs-custom-class="custom-tooltip"
+							data-bs-title="Issued By Certiport | 2025">
+								<img src="css/res/certifications/database-1.png">
+							</button>
+						</div>
+						<div class="card">
+							<button type="button" class="btn" 
+							data-bs-toggle="tooltip" 
+							data-bs-custom-class="custom-tooltip"
+							data-bs-title="Issued By Microsoft | 2024">
+								<img src="css/res/certifications/powerpoint 2019-1.png">
+							</button>
+						</div>
+						<div class="card">
+							<button type="button" class="btn" 
+							data-bs-toggle="tooltip" 
+							data-bs-custom-class="custom-tooltip"
+							data-bs-title="Issued By Microsoft | 2024">
+								<img src="css/res/certifications/word 2019-1.png">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </main>
+	<!-- Pig -->
+	<div class="pigdiv">
+		<marquee id="bottommarquee" direction="right" scrollamount="8"><img src="css/res/minecraft-pig.gif" class="pigimg" id="pigimg"></marquee>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+	<script src="indexscript.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
