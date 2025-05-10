@@ -1,20 +1,19 @@
 body {
     margin: 0 auto;
     padding: 0 auto;
-
-    background-color: var(--mcbackground);
     
     --margintop: calc(8vh + 10px);
+
     .mainbody {
         flex-flow: row;
         padding: 0px;
         width: 100%;
+        height: fit-content;
 
         margin-top: 55px;
     }
 
     .bottombackground {
-    
         position: absolute;
         left: 0;
         width: 100vw;
@@ -172,7 +171,7 @@ body {
 @media screen and (max-width: 860px) {
     body {
         .bottombackground {
-			
+			height: auto;
 			.techstacktitle {
 				width: 100vw;
 				border-radius: 0;
