@@ -106,7 +106,6 @@ body {
 
     width: min(900px, 90vw);
     height: 500px;
-    background-color: var(--mcgray);
     border-radius: 30px;
 
         .formtitle {
@@ -123,8 +122,6 @@ body {
                 display: flex;
 
                 button {
-                background-color: var(--greenish);
-                color: var(--mcgray);
                 height: 30px;
                 padding: 0px 10px;
 
@@ -152,9 +149,7 @@ body {
                 align-items: left;
                 width: 80%;
                 height: 100%;
-                p {
-                    color: var(--mcyellow);
-                }
+                
                 input, textarea{
                     padding: 10px;
                     font-family: 'minecraft';
