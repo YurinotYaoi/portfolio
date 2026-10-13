@@ -17,12 +17,12 @@ import { Button } from "./ui/button"
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar collapsible="icon">
       <SidebarHeader className="flex items-left">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div><ModeToggle/></div>
-            <span className="font-bold">Angelo Uriel Solamo</span>
+            <p className="font-bold">Angelo Uriel Solamo</p >
           </div>
         </div>
       </SidebarHeader>
