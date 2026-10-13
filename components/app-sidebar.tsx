@@ -11,6 +11,8 @@ import {
 import { ModeToggle } from "@/components/ui/theme-toggle-button"
 import { FileText, Layers, Mail, User } from "lucide-react"
 import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export function AppSidebar() {
   return (
@@ -53,9 +55,16 @@ export function AppSidebar() {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarContent>
-
+      <hr />
       <SidebarFooter >
-          <hr />
+          <SidebarMenuButton tooltip="LinkedIn" render={<Link href="https://www.linkedin.com/in/angelo-solamo" target="_blank"/>}>
+              <FontAwesomeIcon icon={faLinkedin} />
+              <span className="group-data-[collapsible=icon]:hidden">LinkedIn</span>
+            </SidebarMenuButton>
+            <SidebarMenuButton tooltip="GitHub" render={<Link href="https://github.com/YurinotYaoi" target="_blank"/>}>
+              <FontAwesomeIcon icon={faGithub} />
+              <span className="group-data-[collapsible=icon]:hidden">GitHub</span>
+            </SidebarMenuButton>
       </SidebarFooter>
     </Sidebar>
   )
