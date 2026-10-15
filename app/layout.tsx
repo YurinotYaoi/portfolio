@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
+import 'animate.css';
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar";
@@ -30,11 +31,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider>
-            <AppSidebar />
-            <main>
-              <SidebarTrigger />
-              {children}
+          <SidebarProvider  className="w-full h-full">
+            <AppSidebar/>
+            <main className="flex flex-col w-full">
+              <SidebarTrigger className="w-8 h-8"/>
+              <div className="flex flex-col items-center justify-center w-full h-full">
+                {children}
+              </div>
             </main>
           </SidebarProvider>
         </ThemeProvider>
