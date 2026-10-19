@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import { useRouter } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -14,6 +15,7 @@ import {
 
 export function ModeToggle() {
   const { setTheme } = useTheme()
+  const router = useRouter()
 
   return (
     <DropdownMenu>
@@ -33,6 +35,9 @@ export function ModeToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           System
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => router.push("/")}>
+          Go Home
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

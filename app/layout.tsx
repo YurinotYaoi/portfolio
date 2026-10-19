@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={figtree.className}
       suppressHydrationWarning
     >
-      <body>
+      <body className="overflow-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,9 +33,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           <SidebarProvider  className="w-full h-full">
             <AppSidebar/>
-            <main className="flex flex-col w-full">
+            <main className="flex min-w-0 flex-1 flex-col">
               <SidebarTrigger className="w-8 h-8"/>
-              <div className="flex flex-col items-center justify-center w-full h-full">
+              <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col h-full justify-center items-center">
                 {children}
               </div>
             </main>
