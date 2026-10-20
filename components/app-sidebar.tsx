@@ -36,6 +36,12 @@ export function AppSidebar() {
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
+            <SidebarMenuButton tooltip="Tech Stack" render={<Link href="/TechStack" />}>
+              <Layers />
+              <span className="group-data-[collapsible=icon]:hidden">Tech Stack</span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
             <SidebarMenuButton tooltip="Projects" render={<Link href="/Projects" />}>
               <FileText />
               <span className="group-data-[collapsible=icon]:hidden">Projects</span>
@@ -45,12 +51,6 @@ export function AppSidebar() {
             <SidebarMenuButton tooltip="Contact" render={<Link href="/Contact" />}>
               <Mail />
               <span className="group-data-[collapsible=icon]:hidden">Contact</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton tooltip="Tech Stack" render={<Link href="/TechStack" />}>
-              <Layers />
-              <span className="group-data-[collapsible=icon]:hidden">Tech Stack</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
