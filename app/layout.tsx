@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={figtree.className}
       suppressHydrationWarning
     >
-      <body className="overflow-hidden">
+      <body className="sm:overflow-hidden overflow-scroll">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

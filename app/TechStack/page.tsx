@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList,  TabsTrigger } from "@/components/ui/tabs";
 
 export default function TechStack() {
@@ -6,7 +7,7 @@ export default function TechStack() {
   return (
     <div className="h-150 w-full">
       <Tabs defaultValue="overview h-full">
-        <Card className="w-full p-0 animate__animated animate__fadeInLeft mb-0"
+        <Card className="w-full p-0 animate__animated animate__fadeInLeft mb-2"
         style={{ '--animate-duration': '0.4s' } as React.CSSProperties}>
           <TabsList className="grid w-full grid-cols-4" variant="line">
             <TabsTrigger value="Tools" className="cursor-pointer">
@@ -21,18 +22,31 @@ export default function TechStack() {
         </Card>
         
         
-        <Card className="w-full h-full p-0 animate__animated animate__fadeInRight mt-0"
+        <Card className="p-0 animate__animated animate__fadeInRight mt-0"
         style={{ '--animate-duration': '0.4s' } as React.CSSProperties}>
-          <TabsContent value="Tools" >
+          <TabsContent value="Tools" className="h-full">
             <Card>
               <CardHeader>
                 <CardTitle>Tools</CardTitle>
                 <CardDescription>These are the tools I use for development</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Tool 1</p>
-                <p>Tool 2</p>
-                <p>Tool 3</p>
+                <ScrollArea className="w-full h-100 rounded-md border">
+                  <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="flex flex-wrap gap-4 justify-evenly">
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                    </div>
+                  </div>
+                </ScrollArea>
               </CardContent>
             </Card>
           </TabsContent>
@@ -43,9 +57,22 @@ export default function TechStack() {
                 <CardDescription>These are the programming languages I know</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Language 1</p>
-                <p>Language 2</p>
-                <p>Language 3</p>
+                <ScrollArea className="w-full h-100 rounded-md border">
+                  <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="flex flex-wrap gap-4 justify-evenly">
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                    </div>
+                  </div>
+                </ScrollArea>
               </CardContent>
             </Card>
           </TabsContent>
@@ -56,9 +83,22 @@ export default function TechStack() {
                 <CardDescription>These are the frameworks I know</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Framework 1</p>
-                <p>Framework 2</p>
-                <p>Framework 3</p>
+                <ScrollArea className="w-full h-100 rounded-md border">
+                  <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="flex flex-wrap gap-4 justify-evenly">
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                    </div>
+                  </div>
+                </ScrollArea>
               </CardContent>
             </Card>
           </TabsContent>
@@ -69,9 +109,22 @@ export default function TechStack() {
                 <CardDescription>These are the certifications I have obtained</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Certification 1</p>
-                <p>Certification 2</p>
-                <p>Certification 3</p>
+                <ScrollArea className="w-full h-100 rounded-md border">
+                  <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="flex flex-wrap gap-4 justify-evenly">
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                      <div className="aspect-video rounded-xl bg-muted/50 w-60" />
+                    </div>
+                  </div>
+                </ScrollArea>
               </CardContent>
             </Card>
           </TabsContent>
