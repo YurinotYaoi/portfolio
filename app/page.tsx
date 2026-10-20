@@ -1,5 +1,10 @@
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Yuri | Home',
+};
 
 export default function Home() {
   return (

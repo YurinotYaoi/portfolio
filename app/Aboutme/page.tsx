@@ -1,5 +1,9 @@
 import { Card } from "@/components/ui/card";
-import { Car } from "lucide-react";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Yuri | About Me',
+};
 
 export default function AboutMe() {
 

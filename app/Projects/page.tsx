@@ -1,3 +1,10 @@
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'Yuri | Projects',
+};
+
 export default function Projects() {
 
   return (

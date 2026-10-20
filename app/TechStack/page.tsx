@@ -2,6 +2,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList,  TabsTrigger } from "@/components/ui/tabs";
 
+export const metadata: Metadata = {
+  title: 'Yuri | Tech Stack',
+};
+
 export default function TechStack() {
 
   return (
