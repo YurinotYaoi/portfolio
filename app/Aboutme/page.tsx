@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,15 +15,16 @@ export default function AboutMe() {
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
         1
       </Card>
-      <Card className="col-start-4 row-start-1 col-span-3 row-span-1
-      animate__animated animate__fadeInDown"
+      <Card className="col-start-1 row-start-1 col-span-6 row-span-1
+      animate__animated animate__fadeInLeft
+      justify-center"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-        2
+        <CardHeader className="font-bold text-4xl text-center">Yuri Not Yaoi</CardHeader>
       </Card>
       <Card className="col-start-7 row-start-1 col-span-3 row-span-4
-      animate__animated animate__fadeInRight [animation-delay:100ms]"
+      animate__animated animate__fadeInRight [animation-delay:120ms]"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>  
-      3
+       3
       </Card>
       <Card className="col-start-7 row-start-5 col-span-3 row-span-1
       animate__animated animate__fadeInUp [animation-delay:200ms]"
@@ -40,8 +41,8 @@ export default function AboutMe() {
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
       6
       </Card>
-      <Card className="col-start-1 row-start-1 col-span-3 row-span-2
-      animate__animated animate__fadeInDown [animation-delay:500ms]"
+      <Card className="col-start-1 row-start-2 col-span-3 row-span-1
+      animate__animated animate__fadeInLeft [animation-delay:500ms]"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
       7
       </Card>
