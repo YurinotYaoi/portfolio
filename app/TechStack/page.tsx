@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faTailwindCss, faTypescript } from "@fortawesome/free-brands-svg-icons";
-import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import { faMicrochip, faNetworkWired } from "@fortawesome/free-solid-svg-icons";
 import { CertificateCard } from "@/components/certificate-card";
 
 export const metadata: Metadata = {
@@ -87,6 +87,14 @@ export default function TechStack() {
                       <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
                         <Image src="/Images/Tech/Tools/tech-tools-vscode.png" alt="Visual Studio Code" width={64} height={64} className="h-16 w-16 object-contain" />
                         <CardTitle>Visual Studio Code</CardTitle>
+                      </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faNetworkWired} aria-label="Wireshark" className="h-16 w-16 text-[#1679A7]" />
+                        <CardTitle>Wireshark</CardTitle>
+                      </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faNetworkWired} aria-label="Cisco Packet Tracer" className="h-16 w-16 text-[#049FD9]" />
+                        <CardTitle>Cisco Packet Tracer</CardTitle>
                       </Card>
                     </div>
                   </div>
