@@ -18,7 +18,7 @@ export default function Home() {
     grid grid-cols-9 grid-rows-9 gap-2">
 
         <img src="Images/avatar.png" className=" w-full h-full
-        col-span-4 row-span-8 
+        col-span-4 row-span-9 
         animate__animated animate__fadeInDown
         justify-center items-center pb-0 rounded-xl object-cover"
         style={{ '--animate-duration': '0.3s' } as React.CSSProperties}/>
@@ -64,7 +64,7 @@ export default function Home() {
       </Card>
 
       <img src="Images/minecraft-dragon.gif" className="object-cover
-      col-span-5 row-span-3 w-full h-full rounded-xl
+      col-span-5 row-span-4 w-full h-full rounded-xl
       animate__animated animate__fadeInUp [animation-delay:400ms]" style={{ '--animate-duration': '0.5s' } as React.CSSProperties}/>
     </div>
   );
