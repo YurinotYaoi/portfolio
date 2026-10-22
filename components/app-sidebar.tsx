@@ -47,12 +47,6 @@ export function AppSidebar() {
               <span className="group-data-[collapsible=icon]:hidden">Projects</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton tooltip="Contact" render={<Link href="/Contact" />}>
-              <Mail />
-              <span className="group-data-[collapsible=icon]:hidden">Contact</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
         </SidebarMenu>
       </SidebarContent>
       <hr />

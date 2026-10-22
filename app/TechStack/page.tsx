@@ -38,7 +38,7 @@ export default function TechStack() {
             <Card>
               <CardHeader>
                 <CardTitle>Tools</CardTitle>
-                <CardDescription>These are the tools I use for development</CardDescription>
+                <CardDescription>These are the tools I use </CardDescription>
               </CardHeader>
               <CardContent>
                 <ScrollArea className="w-full h-100 rounded-md border">
@@ -201,8 +201,8 @@ export default function TechStack() {
           <TabsContent value="Certifications">
             <Card>
               <CardHeader>
-                <CardTitle>Certifications</CardTitle>
-                <CardDescription>These are the certifications I have obtained</CardDescription>
+                <CardTitle>Certificates</CardTitle>
+                <CardDescription>These are the certificates that I have obtained</CardDescription>
               </CardHeader>
               <CardContent>
                 <ScrollArea className="w-full h-100 rounded-md border">
