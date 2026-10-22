@@ -3,6 +3,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList,  TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { Metadata } from "next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faTailwindCss, faTypescript } from "@fortawesome/free-brands-svg-icons";
+import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import { CertificateCard } from "@/components/certificate-card";
 
 export const metadata: Metadata = {
   title: 'Yuri | Tech Stack',
@@ -132,6 +136,14 @@ export default function TechStack() {
                         <Image src="/Images/Tech/Programming/tech-xml.png" alt="XML" width={64} height={64} className="h-16 w-16 object-contain" />
                         <CardTitle>XML</CardTitle>
                       </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faTypescript} aria-label="TypeScript" className="h-16 w-16 text-[#3178C6]" />
+                        <CardTitle>TypeScript</CardTitle>
+                      </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faMicrochip} aria-label="Arduino" className="h-16 w-16 text-[#00979D]" />
+                        <CardTitle>Arduino C++</CardTitle>
+                      </Card>
                     </div>
                   </div>
                 </ScrollArea>
@@ -160,6 +172,18 @@ export default function TechStack() {
                         <Image src="/Images/Tech/Programming/tech-node.js.png" alt="Node.js" width={64} height={64} className="h-16 w-16 object-contain" />
                         <CardTitle>Node.js</CardTitle>
                       </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <Image src="/next.svg" alt="Next.js" width={64} height={64} className="h-16 w-16 object-contain dark:invert" />
+                        <CardTitle>Next.js</CardTitle>
+                      </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faReact} aria-label="React" className="h-16 w-16 text-[#61DAFB]" />
+                        <CardTitle>React</CardTitle>
+                      </Card>
+                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-4">
+                        <FontAwesomeIcon icon={faTailwindCss} aria-label="Tailwind CSS" className="h-16 w-16 text-[#06B6D4]" />
+                        <CardTitle>Tailwind CSS</CardTitle>
+                      </Card>
                     </div>
                   </div>
                 </ScrollArea>
@@ -176,42 +200,42 @@ export default function TechStack() {
                 <ScrollArea className="w-full h-100 rounded-md border">
                   <div className="flex flex-1 flex-col gap-4 p-4">
                     <div className="flex flex-wrap gap-4 justify-evenly">
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/database-1.png" alt="Information Technology Specialist: Databases" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Information Technology Specialist: Databases</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_angelouriel-solamo-sdca-edu-ph_dfbb072e-e01a-4234-a6bb-fe1ba0c25879_page-0001.jpg" alt="Getting Started with Cisco Packet Tracer" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Getting Started with Cisco Packet Tracer</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/Introduction_to_Cybersecurity_certificate_angelouriel-solamo-sdca-edu-ph_d94d47e3-53b9-446a-8eeb-a3046c69be2a_page-0001.jpg" alt="Introduction to Cybersecurity" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Introduction to Cybersecurity</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/Introduction_to_IoT_certificate_angelouriel-solamo-sdca-edu-ph_fdcc4134-a51b-417f-ab4c-81c05d364868_page-0001.jpg" alt="Introduction to IoT" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Introduction to IoT</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/js_page-0001.jpg" alt="JavaScript certificate" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">JavaScript</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/powerpoint%202019-1.png" alt="Microsoft PowerPoint 2019 certificate" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Microsoft PowerPoint 2019</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/Sinegenggeng.png" alt="Domini Xode 2023 Code Hunt certificate" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Domini Xode 2023 Code Hunt</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/softdev_page-0001.jpg" alt="Software Development certificate" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Software Development</CardTitle>
-                      </Card>
-                      <Card className="aspect-video w-60 items-center justify-center gap-2 rounded-xl bg-muted/50 p-3">
-                        <Image src="/Images/Certificates/word%202019-1.png" alt="Microsoft Word 2019 certificate" width={220} height={124} className="h-20 w-full object-contain" />
-                        <CardTitle className="text-center text-xs">Microsoft Word 2019</CardTitle>
-                      </Card>
+                      <CertificateCard
+                        title="Information Technology Specialist: Databases"
+                        src="/Images/Certificates/database-1.png"
+                      />
+                      <CertificateCard
+                        title="Getting Started with Cisco Packet Tracer"
+                        src="/Images/Certificates/Getting_Started_with_Cisco_Packet_Tracer_certificate_angelouriel-solamo-sdca-edu-ph_dfbb072e-e01a-4234-a6bb-fe1ba0c25879_page-0001.jpg"
+                      />
+                      <CertificateCard
+                        title="Introduction to Cybersecurity"
+                        src="/Images/Certificates/Introduction_to_Cybersecurity_certificate_angelouriel-solamo-sdca-edu-ph_d94d47e3-53b9-446a-8eeb-a3046c69be2a_page-0001.jpg"
+                      />
+                      <CertificateCard
+                        title="Introduction to IoT"
+                        src="/Images/Certificates/Introduction_to_IoT_certificate_angelouriel-solamo-sdca-edu-ph_fdcc4134-a51b-417f-ab4c-81c05d364868_page-0001.jpg"
+                      />
+                      <CertificateCard
+                        title="JavaScript"
+                        src="/Images/Certificates/js_page-0001.jpg"
+                      />
+                      <CertificateCard
+                        title="Microsoft PowerPoint 2019"
+                        src="/Images/Certificates/powerpoint%202019-1.png"
+                      />
+                      <CertificateCard
+                        title="Domini Xode 2023 Code Hunt"
+                        src="/Images/Certificates/Sinegenggeng.png"
+                      />
+                      <CertificateCard
+                        title="Software Development"
+                        src="/Images/Certificates/softdev_page-0001.jpg"
+                      />
+                      <CertificateCard
+                        title="Microsoft Word 2019"
+                        src="/Images/Certificates/word%202019-1.png"
+                      />
                     </div>
                   </div>
                 </ScrollArea>
