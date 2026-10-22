@@ -11,17 +11,19 @@ export default function AboutMe() {
 
   return (
     <div className="h-150 w-full
-    grid grid-cols-9 grid-rows-6 gap-4">
+    grid grid-cols-9 grid-rows-6 gap-2">
       <Card className="col-start-4 row-start-2 col-span-3 row-span-4
-      animate__animated animate__fadeInUp"
+      animate__animated animate__fadeInUp justify-center items-center"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-        <img src="/Images/githubpfp.png"/>
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img class="w-full h-full object-cover" src="Images/githubpfp.png" />
+        </div>
       </Card>
       <Card className="col-start-1 row-start-1 col-span-6 row-span-1
       animate__animated animate__fadeInLeft
       justify-center"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-        <CardHeader className="font-bold text-5xl text-center">
+        <CardHeader className="font-bold text-3xl text-center">
           Yuri Not Yaoi
         </CardHeader>
       </Card>
@@ -35,7 +37,7 @@ export default function AboutMe() {
       animate__animated animate__fadeInUp [animation-delay:200ms]
       justify-center bg-[var(--water)]"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>  
-        <CardHeader className="font-bold text-3xl text-center">
+        <CardHeader className="font-bold text-2xl text-center">
           Education
         </CardHeader>
       </Card>
@@ -55,7 +57,7 @@ export default function AboutMe() {
       animate__animated animate__fadeInLeft [animation-delay:500ms]
       justify-center bg-[var(--water)]"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-        <CardHeader className="font-bold text-3xl text-center">
+        <CardHeader className="font-bold text-2xl text-center">
           Student Developer
         </CardHeader>
       </Card>
