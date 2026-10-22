@@ -1,7 +1,7 @@
 import Axelotle from "@/components/axelotle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { MinecraftIcon } from "@xefreh/minecraft-assets-react";
+import Image from "next/image";
 import { diamond, gold_ingot, iron_ingot } from "@xefreh/minecraft-assets-react/items";
 import { Car } from "lucide-react";
 import { Metadata } from 'next';
@@ -55,19 +55,19 @@ export default function AboutMe() {
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
         <CardContent className="flex flex-row items-stretch justify-center">
         <div className="mx-1 flex min-w-0 flex-1 flex-col items-center justify-center md:mx-2">
-          <MinecraftIcon src={iron_ingot} alt="Iron ingot" size={50} />
+          <Image src={iron_ingot} alt="Iron ingot" width={50} height={50} unoptimized style={{ imageRendering: "pixelated" }} />
           <h1 className="text-center text-sm font-bold md:text-lg">High School</h1>
           <p className="text-center text-xs md:text-sm">Eastern Bacoor National <br></br>High School</p>
         </div>
         <Separator orientation="vertical"/>
         <div className="mx-1 flex min-w-0 flex-1 flex-col items-center justify-center md:mx-2">
-          <MinecraftIcon src={gold_ingot} alt="Gold ingot" size={50} />
+          <Image src={gold_ingot} alt="Gold ingot" width={50} height={50} unoptimized style={{ imageRendering: "pixelated" }} />
           <h1 className="text-center text-sm font-bold md:text-lg">Senior High School</h1>
           <p className="text-center text-xs md:text-sm">University of Perpetual Help <br/>Molino System DALTA</p>
         </div>
         <Separator orientation="vertical"/>
         <div className="mx-1 flex min-w-0 flex-1 flex-col items-center justify-center md:mx-2">
-          <MinecraftIcon src={diamond} alt="Diamond" size={50} />
+          <Image src={diamond} alt="Diamond" width={50} height={50} unoptimized style={{ imageRendering: "pixelated" }} />
           <h1 className="text-center text-sm font-bold md:text-lg">College</h1>
           <p className="text-center text-xs md:text-sm">Saint Dominic <br></br>College of Asia</p>
         </div>
