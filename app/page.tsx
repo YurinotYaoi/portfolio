@@ -4,8 +4,9 @@ import { Metadata } from 'next';
 import { Separator } from "@/components/ui/separator";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants} from "@/components/ui/button";
 import { ButtonGroup, ButtonGroupSeparator } from "@/components/ui/button-group";
+import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
   title: 'Yuri | Home',
@@ -46,15 +47,19 @@ export default function Home() {
       flex flex-row justify-center"
       style={{ '--animate-duration': '0.5s' } as React.CSSProperties}>
         <ButtonGroup className="w-full h-full">
-          <Button className="flex justify-center items-center cursor-pointer w-1/2" variant="link">
+          <a className={cn("flex justify-center items-center cursor-pointer w-1/2", 
+          buttonVariants({ variant: "link", size: "sm" }))}
+          href="https://github.com/YurinotYaoi" target="_blank">
             <FontAwesomeIcon icon={faGithub} className="w-4 mr-2" />
             <p className="text-lg">GitHub</p>
-          </Button>
+          </a>
           <ButtonGroupSeparator/>
-          <Button className="flex justify-center items-center cursor-pointer w-1/2" variant="link">
+          <a className={cn("flex justify-center items-center cursor-pointer w-1/2", 
+          buttonVariants({ variant: "link", size: "sm" }))}
+          href="https://www.linkedin.com/in/angelo-solamo" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} className="w-4 mr-2" />
             <p className="text-lg">Linkedin</p>
-          </Button>
+          </a>
         </ButtonGroup>
       </Card>
 

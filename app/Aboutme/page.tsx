@@ -1,6 +1,6 @@
 import Axelotle from "@/components/axelotle";
-import { Card, CardHeader } from "@/components/ui/card";
-import { Avatar } from "@base-ui/react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,8 +15,8 @@ export default function AboutMe() {
       <Card className="col-start-4 row-start-2 col-span-3 row-span-4
       animate__animated animate__fadeInUp justify-center items-center"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-        <div class="w-32 h-32 rounded-full overflow-hidden">
-          <img class="w-full h-full object-cover" src="Images/githubpfp.png" />
+        <div className="w-32 h-32 rounded-full overflow-hidden">
+          <img className="w-full h-full object-cover" src="Images/githubpfp.png" />
         </div>
       </Card>
       <Card className="col-start-1 row-start-1 col-span-6 row-span-1
@@ -44,7 +44,20 @@ export default function AboutMe() {
       <Card className="col-start-4 row-start-6 col-span-6 row-span-1
       animate__animated animate__fadeInUp [animation-delay:300ms]"
       style={{ '--animate-duration': '0.1s' } as React.CSSProperties}>
-      5
+        <CardContent className="flex flex-row justify-center align-center">
+        <div className="h-full w-1/6 flex items-center justify-center">
+          iron
+        </div>
+        <Separator orientation="vertical"/>
+        <div className="h-full w-1/6">
+          gold
+        </div>
+        <Separator orientation="vertical"/>
+        <div className="h-full w-1/6">
+          diamond
+        </div>
+        </CardContent>
+
       </Card>
       <Card className="col-start-1 row-start-3 col-span-3 row-span-4
       animate__animated animate__fadeInLeft [animation-delay:400ms]"
