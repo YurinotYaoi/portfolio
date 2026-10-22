@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   devIndicators: false,
-  output: 'export',
   turbopack: {
     rules: {
       "*.css": {
@@ -14,8 +13,6 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  basePath: '/portfolio', 
-  assetPrefix: '/portfolio', 
 };
 
 export default nextConfig;
