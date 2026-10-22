@@ -225,7 +225,7 @@ export default function TechStack() {
                         src="/Images/Certificates/Introduction_to_IoT_certificate_angelouriel-solamo-sdca-edu-ph_fdcc4134-a51b-417f-ab4c-81c05d364868_page-0001.jpg"
                       />
                       <CertificateCard
-                        title="JavaScript"
+                        title="Information Technology Specialist: JavaScript"
                         src="/Images/Certificates/js_page-0001.jpg"
                       />
                       <CertificateCard
@@ -237,7 +237,7 @@ export default function TechStack() {
                         src="/Images/Certificates/Sinegenggeng.png"
                       />
                       <CertificateCard
-                        title="Software Development"
+                        title="Information Technology Specialist: Software Development"
                         src="/Images/Certificates/softdev_page-0001.jpg"
                       />
                       <CertificateCard
