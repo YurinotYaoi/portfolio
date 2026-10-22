@@ -19,14 +19,14 @@ export default function TechStack() {
       <Tabs defaultValue="overview h-full">
         <Card className="w-full p-0 animate__animated animate__fadeInLeft mb-2"
         style={{ '--animate-duration': '0.4s' } as React.CSSProperties}>
-          <TabsList className="grid w-full grid-cols-4" variant="line">
-            <TabsTrigger value="Tools" className="cursor-pointer">
+          <TabsList className="grid w-full grid-cols-2 group-data-horizontal/tabs:h-auto md:grid-cols-4" variant="line">
+            <TabsTrigger value="Tools" className="min-w-0 cursor-pointer whitespace-normal px-1 text-center text-xs leading-tight sm:text-sm">
               Tools</TabsTrigger> 
-            <TabsTrigger value="Programming Languages" className="cursor-pointer">
+            <TabsTrigger value="Programming Languages" className="min-w-0 cursor-pointer whitespace-normal px-1 text-center text-xs leading-tight sm:text-sm">
               Programming Languages</TabsTrigger>
-            <TabsTrigger value="Frameworks" className="cursor-pointer">
+            <TabsTrigger value="Frameworks" className="min-w-0 cursor-pointer whitespace-normal px-1 text-center text-xs leading-tight sm:text-sm">
               Frameworks</TabsTrigger>
-            <TabsTrigger value="Certifications" className="cursor-pointer">
+            <TabsTrigger value="Certifications" className="min-w-0 cursor-pointer whitespace-normal px-1 text-center text-xs leading-tight sm:text-sm">
               Certifications</TabsTrigger>
           </TabsList>
         </Card>
